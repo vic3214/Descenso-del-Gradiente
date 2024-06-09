@@ -8,7 +8,7 @@ El método de descenso del gradiente es una técnica de optimización utilizada 
 
 1.  **Función de Costo**: Una función diferenciable J(θ) que se desea minimizar, donde θ representa los parámetros del modelo.
 2.  **Gradiente de la Función de Costo**: El vector de derivadas parciales ∇J(θ), que indica la dirección del mayor incremento de la función de costo.
-3.  **Tasa de Aprendizaje**: Un escalar α que determina el tamaño del paso que se da en cada iteración. La elección adecuada de α\alphaα es crucial para la convergencia del algoritmo.
+3.  **Tasa de Aprendizaje**: Un escalar α que determina el tamaño del paso que se da en cada iteración. La elección adecuada de α es crucial para la convergencia del algoritmo.
 4.  **Condición de Convergencia**: Un criterio para detener el algoritmo, que puede ser un número fijo de iteraciones, un cambio mínimo en la función de costo, o que el gradiente se acerque a cero.
 
 ## Pseudocódigo
@@ -22,7 +22,7 @@ El método de descenso del gradiente es una técnica de optimización utilizada 
     b. Actualizar los parámetros θ en la dirección opuesta al gradiente:
        θ = θ - α * ∇J(θ)
 
-3. Devolver los parámetros θ optimizados.`
+3. Devolver los parámetros θ optimizados.
 
 ## Ejemplo en Pseudocódigo
 
@@ -51,8 +51,6 @@ retornar θ
     -   **Descenso del Gradiente Estocástico (SGD)**: Actualiza los parámetros usando un solo ejemplo de entrenamiento por iteración.
     -   **Descenso del Gradiente por Mini-lotes**: Utiliza un pequeño lote de ejemplos de entrenamiento en cada iteración.
     -   **Descenso del Gradiente Batch**: Utiliza todos los ejemplos de entrenamiento para calcular el gradiente en cada iteración.
-
-El método de descenso del gradiente es fundamental para muchos algoritmos de aprendizaje automático y su comprensión es esencial para el desarrollo de modelos eficientes y efectivos.
 
 
 ## Ejemplo
